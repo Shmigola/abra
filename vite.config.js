@@ -55,6 +55,25 @@ function transformImagePaths(isProduction) {
 // 	};
 // };
 
+// Плагін для видалення папки partials після збірки
+function removePartialsPlugin() {
+	return {
+		name: "remove-partials-plugin",
+		closeBundle: {
+			sequential: true,
+			order: "post",
+			handler() {
+				const partialsDir = path.resolve(__dirname, "dist/partials");
+				if (fs.existsSync(partialsDir)) {
+					console.log("Видаляємо папку partials з dist...");
+					fs.rmSync(partialsDir, { recursive: true, force: true });
+					console.log("Папку partials успішно видалено!");
+				}
+			},
+		},
+	};
+}
+
 export default defineConfig({
 	root: "src",
 	base: "./",
@@ -124,9 +143,7 @@ export default defineConfig({
 			partialDirectory: resolve("src", "partials"),
 			reloadOnPartialChange: true,
 
-			context: {
-				
-			},
+			context: {},
 
 			// щоб декілька - імпортуємо json файл і через кому додаємо
 			// context: { images, data }
@@ -142,5 +159,7 @@ export default defineConfig({
 				}
 			},
 		},
+		// Додаємо плагін для видалення папки partials після збірки
+		removePartialsPlugin(),
 	],
 });
