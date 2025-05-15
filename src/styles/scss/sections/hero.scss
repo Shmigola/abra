@@ -1,0 +1,152 @@
+@use "../utilities/" as *;
+
+.hero {
+	block-size: rem(718);
+
+	.container {
+		position: relative;
+		z-index: 3;
+		block-size: 100%;
+	}
+
+	&__background {
+		position: absolute;
+		pointer-events: none;
+		inset: 0;
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			display: block;
+			background-color: rgb(18 31 63 / 0.8);
+			inset: 0;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+			display: block;
+			background: linear-gradient(0deg, #121f3f 0%, rgb(18 31 63 / 0) 100%);
+			block-size: rem(192);
+
+			@media (width < em(1440)) {
+				block-size: rem(119);
+			}
+
+			@media (width < em(992)) {
+				block-size: rem(80);
+			}
+
+			@media (width < em(567)) {
+				block-size: rem(48);
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		block-size: 100%;
+		margin-inline: auto;
+		max-inline-size: rem(620);
+	}
+
+	&__title {
+		font-weight: 900;
+		font-size: rem(64);
+		line-height: 110%;
+		letter-spacing: -0.01em;
+		text-align: center;
+		-webkit-text-fill-color: transparent;
+		text-shadow: rem(4) rem(4) rem(16) 0 rgb(0 0 0 / 0.24);
+		background: linear-gradient(132deg, #ff9f00 0%, #ff6b00 100%);
+		background-clip: text;
+
+		@media (width < em(1440)) {
+			font-size: rem(56);
+		}
+
+		@media (width < em(992)) {
+			font-size: rem(48);
+		}
+
+		@media (width < em(576)) {
+			font-size: rem(32);
+		}
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: 150%;
+		letter-spacing: 0.01em;
+		text-align: center;
+		text-shadow: 0 rem(4) rem(4) 0 rgb(0 0 0 / 0.25);
+		color: var(--white-linen);
+		margin-block-start: rem(8);
+
+		@media (width < em(992)) {
+			font-size: rem(16);
+		}
+
+		@media (width < em(576)) {
+			font-size: rem(14);
+		}
+	}
+
+	&__form {
+		display: flex;
+		gap: rem(24);
+		inline-size: 100%;
+		margin-block-start: rem(48);
+
+		.form {
+			&__group {
+				flex: 1;
+			}
+
+			&__input {
+				border-radius: rem(100);
+				backdrop-filter: blur(rem(48));
+			}
+		}
+
+		@media (width < em(567)) {
+			flex-flow: column;
+			gap: rem(16);
+
+			.btn {
+				width: 100%;
+			}
+		}
+	}
+
+	form {
+		inline-size: 100%;
+	}
+
+	@media (width < em(1440)) {
+		block-size: rem(595);
+	}
+
+	@media (width < em(992)) {
+		block-size: rem(522);
+	}
+
+	@media (width < em(567)) {
+		block-size: rem(490);
+	}
+}

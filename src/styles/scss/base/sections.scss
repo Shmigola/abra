@@ -1,1 +1,19 @@
 @use "../utilities/" as *;
+
+section {
+	padding-block: rem(120);
+
+	&.hero {
+		position: relative;
+		overflow: clip;
+		padding-block: 0;
+	}
+
+	@media (width < em(1440)) {
+		padding-block: rem(82);
+	}
+
+	@media (width < em(992)) {
+		padding-block: rem(50);
+	}
+}
