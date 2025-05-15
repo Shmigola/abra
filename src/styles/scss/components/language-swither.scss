@@ -1,0 +1,72 @@
+@use "../utilities/" as *;
+
+.language {
+	position: relative;
+
+	&__swither {
+		position: relative;
+		z-index: 2;
+		
+		&:focus {
+			outline: 1px solid var(--silver);
+		}
+	}
+
+	&__value-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--silver);
+		border-radius: 50%;
+		width: rem(40);
+		height: rem(40);
+	}
+
+	&__current-value {
+		overflow: clip;
+		border-radius: 50%;
+		width: rem(34);
+		height: rem(34);
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__submenu {
+		position: absolute;
+		left: 50%;
+		display: flex;
+		flex-flow: column;
+		opacity: 0;
+		transform: translate(-50%, rem(-20));
+		transition: all 0.2s ease-out;
+		pointer-events: none;
+		gap: rem(8);
+	}
+
+	&__submenu-item {
+		> a {
+			display: flex;
+
+			> span {
+				width: rem(34);
+				height: rem(34);
+			}
+
+			&:focus {
+				outline: 1px solid var(--silver);
+			}
+		}
+	}
+
+	&.active {
+		.language__submenu {
+			opacity: 1;
+			transform: translate(-50%, rem(10));
+			pointer-events: auto;
+		}
+	}
+}

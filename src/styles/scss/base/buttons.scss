@@ -1,0 +1,49 @@
+@use "../utilities/" as *;
+
+.btn {
+	--color: var(--white);
+	--bgcolor: #0000;
+	--brcolor: #0000;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--brcolor);
+	border-radius: rem(100);
+	padding: rem(7) rem(16);
+	width: fit-content;
+	font-weight: 700;
+	color: var(--color);
+	background-color: var(--bgcolor);
+	transition: all 0.2s ease-out;
+	gap: rem(4);
+
+	&:focus {
+		outline: 1px solid var(--silver);
+	}
+
+	&--primary {
+		--color: var(--bunting);
+		--bgcolor: var(--orange-peel);
+		--brcolor: var(--orange-peel);
+
+		@include hover-supported {
+			--bgcolor: var(--my-sin);
+			--brcolor: var(--my-sin);
+
+			box-shadow: 0 0 8px 0 rgb(255 179 20 / 0.5);
+		}
+	}
+
+	&--outline-light {
+		--brcolor: var(--silver);
+
+		@include hover-supported {
+			--bgcolor: rgb(255 255 255 / 0.1);
+			--brcolor: var(--white);
+
+			box-shadow: 0 0 8px 0 rgb(255 255 255 / 0.5);
+			
+		}
+	}
+}

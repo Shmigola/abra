@@ -1,0 +1,114 @@
+@use "../utilities/" as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-primary);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-size: rem(16);
+	text-size-adjust: 100%;
+	color: var(--white);
+	-webkit-tap-highlight-color: transparent;
+	background-color: var(--bunting);
+
+	&.lock {
+		overflow: hidden;
+		padding-right: rem(16);
+		touch-action: none;
+		overscroll-behavior: none;
+
+		.body-wrapper {
+			pointer-events: none;
+		}
+
+		@media (max-width: em(1023)) {
+			padding-right: 0;
+		}
+	}
+}
+
+img {
+	width: 100%;
+}
+
+main {
+	flex: 1 1 0%;
+}
+
+a:not([class]) {
+	text-decoration: none;
+	color: var(--black);
+	transition: all 0.2s ease-in;
+	text-underline-offset: rem(2);
+
+	&:focus {
+		outline: 1px solid var(--black);
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: unset;
+
+		.icon {
+			background-color: var(--black);
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+button {
+	border: none;
+	padding: 0;
+	font-family: var(--font-primary);
+	background: none;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.body-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+	min-height: 100%;
+}
+
+.container {
+	max-width: rem(1456);
+	margin-inline: auto;
+	padding-inline: rem(24);
+}
+
+.sr-only {
+	position: absolute;
+	clip-path: inset(50%);
+	overflow: hidden;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	word-wrap: normal !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-overflow-scrolling: touch;
+}
