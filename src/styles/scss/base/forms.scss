@@ -1,0 +1,150 @@
+@use "../utilities/" as *;
+
+.form {
+	&__group {
+		display: flex;
+		flex-flow: column;
+		margin-block-end: rem(12);
+
+		&.has-error {
+			position: relative;
+
+			.form__input {
+				border: 1px solid var(--torch-red);
+				box-shadow: 0 0 0 1px var(--torch-red);
+				caret-color: var(--torch-red);
+				background-color: rgb(255 255 255 / 0.04);
+
+				&:focus {
+					border: 1px solid var(--torch-red);
+					box-shadow: 0 0 0 1px var(--torch-red);
+					background-color: rgb(255 255 255 / 0.04);
+				}
+
+				@include hover-supported {
+					border: 1px solid var(--torch-red);
+					box-shadow: 0 0 0 1px var(--torch-red);
+					background-color: rgb(255 255 255 / 0.04);
+				}
+			}
+		}
+	}
+
+	&__label-text {
+		font-size: rem(14);
+		line-height: 143%;
+		letter-spacing: 0.01em;
+	}
+
+	&__input {
+		border: 1px solid rgb(195 195 195 / 0.4);
+		border-radius: rem(4);
+		padding: rem(8) rem(12);
+		color: var(--white);
+		caret-color: var(--orange-peel);
+		background-color: #0000;
+		transition: all 0.2s ease-out;
+		block-size: rem(40);
+		inline-size: 100%;
+
+		&::placeholder {
+			line-height: 150%;
+			letter-spacing: 0.01em;
+			text-align: right;
+			color: rgb(255 255 255 / 0.4);
+		}
+
+		&:focus {
+			border: 1px solid var(--orange-peel);
+			box-shadow: 0 0 0 1px var(--orange-peel);
+			background-color: rgb(255 255 255 / 0.04);
+		}
+
+		@include hover-supported {
+			border: 1px solid rgb(195 195 195 / 0.8);
+			box-shadow: 0 0 0 1px rgb(195 195 195 / 0.8);
+			color: var(--white);
+			background-color: rgb(255 255 255 / 0.08);
+
+			&:focus {
+				border: 1px solid var(--orange-peel);
+				box-shadow: 0 0 0 1px var(--orange-peel);
+				background-color: rgb(255 255 255 / 0.04);
+			}
+		}
+	}
+
+	&__error-message {
+		position: absolute;
+		bottom: rem(-16);
+		display: flex;
+		align-items: center;
+		font-size: rem(12);
+		line-height: 120%;
+		color: var(--silver);
+		gap: rem(4);
+
+		.icon {
+			width: rem(12);
+			height: rem(12);
+		}
+	}
+
+	&__checkbox,
+	&__radio {
+		display: flex;
+		gap: rem(14);
+
+		&:focus-within {
+			.form__checkbox-box, .form__radio-box {
+				outline: 1px solid var(--silver);
+			}
+		}
+	}
+
+	&__checkbox {
+		padding-block: rem(12);
+	}
+
+	&__checkbox-input,
+	&__radio-input {
+		position: absolute;
+		margin: -1px;
+		width: 1px;
+		height: 1px;
+		clip: rect(0 0 0 0);
+	}
+
+	&__checkbox-box {
+		display: flex;
+		border: 1px solid var(--silver);
+		border-radius: rem(2);
+		width: rem(16);
+		height: rem(16);
+		background-color: rgb(255 255 255 / 0.24);
+		transition: all 0.2s ease-out;
+		margin-block-start: rem(2);
+
+		.icon {
+			opacity: 0;
+		}
+	}
+
+	&__checkbox-input {
+		&:checked + .form__checkbox-box {
+			border: 1px solid var(--mariner);
+			background-color: var(--mariner);
+
+			.icon {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__checkbox-label {
+		font-size: rem(14);
+		line-height: 143%;
+		letter-spacing: 0.01em;
+		color: var(--silver);
+	}
+}

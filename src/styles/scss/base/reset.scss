@@ -133,8 +133,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 input[type="search"] {
 	appearance: none;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -162,8 +160,6 @@ audio:not([controls]) {
 
 html {
 	font-size: 100%; /* 1 */
-	-webkit-text-size-adjust: 100%; /* 2 */
-	-ms-text-size-adjust: 100%; /* 2 */
 }
 
 a:active,
@@ -185,7 +181,6 @@ form {
 	margin: 0;
 }
 
-
 legend {
 	border: 0; /* 1 */
 	padding: 0;
@@ -196,8 +191,8 @@ button,
 input,
 select,
 textarea {
-	font-size: 100%; /* 1 */
 	margin: 0; /* 2 */
+	font-size: 100%; /* 1 */
 	vertical-align: baseline; /* 3 */
 }
 
@@ -249,8 +244,9 @@ input::-moz-focus-inner {
 }
 
 textarea {
-	overflow: auto; /* 1 */
 	vertical-align: top; /* 2 */
+	overflow: auto; /* 1 */
+	resize: vertical;
 }
 
 table {
@@ -260,20 +256,18 @@ table {
 
 ::-moz-selection {
 	text-shadow: none;
-	background: #b3d4fc;
+	color: var(--bunting);
+	background: rgb(255 119 72 / 0.8);
 }
 
 ::selection {
 	text-shadow: none;
-	background: #b3d4fc;
+	color: var(--bunting);
+	background: rgb(255 119 72 / 0.8);
 }
 
 fieldset {
-	border: 0;
 	margin: 0;
+	border: 0;
 	padding: 0;
-}
-
-textarea {
-	resize: vertical;
 }

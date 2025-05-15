@@ -1,0 +1,24 @@
+@use "mixins" as *;
+@use "variables" as *;
+@use "functions" as *;
+
+// рядок сітки
+.row {
+	@include row;
+}
+
+// колонка сітки
+.col {
+	flex: 1 0 0%;
+}
+
+// генерація голонок
+@each $bp, $width in $grid-breakpoints {
+	@include media(em($width)) {
+		@for $i from 1 through $grid-columns {
+			.col-#{$bp}-#{$i} {
+				@include col($i);
+			}
+		}
+	}
+}

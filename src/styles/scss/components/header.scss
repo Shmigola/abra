@@ -3,6 +3,7 @@
 .header {
 	position: sticky;
 	top: 0;
+	z-index: 10;
 	color: var(--white);
 	background-color: rgb(18 31 63 / 0.4);
 	backdrop-filter: blur(40px);
@@ -100,12 +101,19 @@
 					left: 0;
 					width: 100%;
 				}
+
+				@include hover-supported {
+					&::before {
+						left: 0;
+						width: 100%;
+					}
+				}
 			}
 
 			@include hover-supported {
 				&::before {
-					left: 0;
-					width: 100%;
+					left: calc(50% - rem(12));
+					width: rem(24);
 				}
 
 				&.has-children {

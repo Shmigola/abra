@@ -10,7 +10,7 @@ $grid-columns: 12 !default;
 
 // відстань між елементами
 // $grid-gap: 20px !default;
-$grid-gap: 10;
+$grid-gap: 20;
 $grid-gap-side: math.div($grid-gap, 2); // migrate sass 5
 
 // контрольні точки сітки
@@ -20,13 +20,13 @@ $grid-breakpoints: (
 	md: 768,
 	lg: 992,
 	xl: 1200,
-	xxl: 1400
+	xxl: 1440
 ) !default;
 $maxWidth: 1920;
 $minWidth: 320;
 $maxWidthContainer: 1456;
 $fontSizeDefault: 16;
-$containerPadding: 24;
+$containerPadding: 20;
 
 // Ширина спрацьовування першого брейкпоінту
 $containerWidth: $maxWidthContainer + $containerPadding;

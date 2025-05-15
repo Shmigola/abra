@@ -6,17 +6,20 @@
 	--brcolor: #0000;
 
 	display: inline-flex;
+	flex-shrink: 0;
 	align-items: center;
 	justify-content: center;
 	border: 1px solid var(--brcolor);
 	border-radius: rem(100);
 	padding: rem(7) rem(16);
-	width: fit-content;
 	font-weight: 700;
 	color: var(--color);
 	background-color: var(--bgcolor);
 	transition: all 0.2s ease-out;
+	block-size: fit-content;
 	gap: rem(4);
+	inline-size: fit-content;
+	min-block-size: rem(40);
 
 	&:focus {
 		outline: 1px solid var(--silver);

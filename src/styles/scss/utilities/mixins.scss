@@ -17,14 +17,12 @@
 @mixin row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: rem(-$grid-gap-side);
-	margin-left: rem(-$grid-gap-side);
+	margin-inline: rem(-$grid-gap-side);
 
 	> * {
-		margin-right: rem($grid-gap-side);
-		margin-left: rem($grid-gap-side);
 		width: 100%;
 		max-width: 100%;
+		margin-inline: rem($grid-gap-side);
 	}
 }
 
@@ -36,7 +34,7 @@
 
 // медіа
 @mixin media($width) {
-	@media (min-width: $width) {
+	@media (width > $width) {
 		@content;
 	}
 }
@@ -139,7 +137,7 @@
 	$propertyValue: clamp(#{$minValuerem + rem}, #{$fluidValue}, #{$maxValuerem + rem});
 
 	// якщо від'ємне значення
-	@if ($minValuePx > $startValuePx) {
+	@if $minValuePx > $startValuePx {
 		$propertyValue: clamp(#{$maxValuerem + rem}, #{$fluidValue}, #{$minValuerem + rem});
 	}
 
@@ -173,7 +171,7 @@
 	#{$property}: get-vw($sizeStartPx);
 	// Prevent font-size from getting too big
 
-	@if ($unit == 0) {
+	@if $unit == 0 {
 		$unit: "px";
 		@media #{$wide-screen} {
 			#{$property}: #{$sizeStartPx}#{$unit};
@@ -190,7 +188,7 @@
 
 @mixin line-clamp($line-number: 3) {
 	display: -webkit-box;
-	-webkit-line-clamp: $line-number;
-	-webkit-box-orient: vertical;
 	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line-number;
 }

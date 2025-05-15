@@ -97,6 +97,18 @@ strong {
 	max-width: rem(1456);
 	margin-inline: auto;
 	padding-inline: rem(24);
+
+	@media (width < em(1440)) {
+		max-width: rem(848);
+	}
+
+	@media (width < em(992)) {
+		max-width: rem(566);
+	}
+
+	@media (width < em(576)) {
+		max-width: rem(390);
+	}
 }
 
 .sr-only {
