@@ -151,6 +151,8 @@
 	}
 
 	&__contact-us {
+		flex-shrink: 0;
+		
 		@media (width < em(767)) {
 			.btn {
 				border-radius: 50%;

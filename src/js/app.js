@@ -56,21 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
 				const lang = item.getAttribute("lang");
 				const flagSrc = item.querySelector("img").src;
 				const languageName = item.getAttribute("data-language-name");
-				const baseAriaLabel = item.getAttribute("data-base-aria-label"); // Беремо з поточного лінка
-
-				// Оновлюємо поточне значення
+				const baseAriaLabel = item.getAttribute("data-base-aria-label"); // get from current lonk
+				// Update current value
 				currentValue.innerHTML = `<img src="${flagSrc}" aria-hidden="true" />`;
 				currentValue.setAttribute("lang", lang);
 				currentValue.setAttribute("xml:lang", lang);
 
-				// Оновлюємо aria-label світчера
+				// update aria-label switcher
 				switcher.setAttribute("aria-label", `${baseAriaLabel} ${languageName}`);
 
-				// Закриваємо меню
+				// clode menu
 				menu.classList.remove("active");
 				switcher.setAttribute("aria-expanded", "false");
 
-				// Оновлюємо стан елементів меню
+				// update state menu elements
 				languageItems.forEach((i) => {
 					i.setAttribute("aria-selected", i === item ? "true" : "false");
 					i.setAttribute("tabindex", "-1");

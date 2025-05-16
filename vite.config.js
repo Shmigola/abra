@@ -6,6 +6,7 @@ import * as sass from "sass";
 // import tailwindcss from "@tailwindcss/vite";
 import handlebars from "vite-plugin-handlebars";
 import events from "./src/public/js/api/events";
+import eventsltr from "./src/public/js/api/events-ltr";
 // import girls from "./src/data/girls";
 
 function getHtmlEntryFiles(srcDir) {
@@ -143,7 +144,7 @@ export default defineConfig({
 			partialDirectory: resolve("src", "partials"),
 			reloadOnPartialChange: true,
 
-			context: { events },
+			context: { events, eventsltr },
 
 			// щоб декілька - імпортуємо json файл і через кому додаємо
 			// context: { images, data }

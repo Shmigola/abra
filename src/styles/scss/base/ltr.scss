@@ -1,0 +1,9 @@
+html {
+	&:not([dir="rtl"]) {
+		.btn {
+			.icon--arrow-left {
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}
