@@ -47,12 +47,12 @@ main {
 
 a:not([class]) {
 	text-decoration: none;
-	color: var(--black);
+	color: var(--white);
 	transition: all 0.2s ease-in;
 	text-underline-offset: rem(2);
 
 	&:focus {
-		outline: 1px solid var(--black);
+		outline: 1px solid var(--silver);
 	}
 
 	&:hover {
@@ -123,4 +123,16 @@ strong {
 	word-wrap: normal !important;
 	clip: rect(1px, 1px, 1px, 1px);
 	-webkit-overflow-scrolling: touch;
+}
+
+.loader {
+	margin: rem(20) auto;
+	border: rem(5) solid #0000;
+	border-top: rem(5) solid var(--orange-peel);
+	border-radius: 50%;
+	width: rem(50);
+	height: rem(50);
+	animation: rotation 1s linear infinite;
+
+	
 }

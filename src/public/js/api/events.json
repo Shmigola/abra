@@ -1,0 +1,127 @@
+[
+	{
+		"id": 1,
+		"title": "Microsoft Fabric",
+		"image": "img/events-card-03.webp",
+		"badges": [
+			{ "icon": "icon--clock-afternoon", "text": "Sold out" }
+		],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 2,
+		"title": "פעילות R&D פתחה את שנת 2025 ובענק! 🚀",
+		"image": "img/events-card-02.webp",
+		"badges": [
+			{ "icon": "icon--rocket", "text": "אירוע חם", "bgcolor": "var(--wild-watermelon)" },
+			{ "icon": "icon--clock-afternoon", "text": "Sold out" }
+		],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 3,
+		"title": "🤩 Webinar Copilot 365 🤩",
+		"image": "img/events-card-01.webp",
+		"badges": [
+			{ "icon": "icon--rocket", "text": "אירוע חם", "bgcolor": "var(--wild-watermelon)" },
+			{ "icon": "icon--clock-afternoon", "text": "Sold out" }
+		],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 4,
+		"title": "יום אימוץ כלבים באברא ✨",
+		"image": "img/events-card-06.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 5,
+		"title": "מצדיעים למילואימניקים!🫡",
+		"image": "img/events-card-04.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 6,
+		"title": "יום אימוץ כלבים באברא ✨",
+		"image": "img/events-card-05.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 7,
+		"title": "שם האירוע ",
+		"image": "img/events-card-09.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 8,
+		"title": "שם האירוע ",
+		"image": "img/events-card-08.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	},
+	{
+		"id": 9,
+		"title": "שם האירוע ",
+		"image": "img/events-card-07.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "הפנינה 6, רעננה<" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "הרשמה לאירוע"
+	}
+]

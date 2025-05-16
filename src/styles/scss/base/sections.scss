@@ -10,10 +10,10 @@ section {
 	}
 
 	@media (width < em(1440)) {
-		padding-block: rem(82);
+		padding-block: rem(64);
 	}
 
-	@media (width < em(992)) {
-		padding-block: rem(50);
+	@media (width < em(576)) {
+		padding-block: rem(40);
 	}
 }

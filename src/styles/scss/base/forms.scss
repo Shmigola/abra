@@ -28,6 +28,21 @@
 				}
 			}
 		}
+
+		&--search {
+			position: relative;
+
+			.form__input {
+				border-radius: rem(100);
+				padding-inline-start: rem(40);
+			}
+			
+			.icon--search {
+				position: absolute;
+				top: rem(6);
+				inset-inline-start: rem(12)
+			}
+		}
 	}
 
 	&__label-text {
@@ -96,7 +111,8 @@
 		gap: rem(14);
 
 		&:focus-within {
-			.form__checkbox-box, .form__radio-box {
+			.form__checkbox-box,
+			.form__radio-box {
 				outline: 1px solid var(--silver);
 			}
 		}

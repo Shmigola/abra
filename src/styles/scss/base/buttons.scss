@@ -4,6 +4,7 @@
 	--color: var(--white);
 	--bgcolor: #0000;
 	--brcolor: #0000;
+	--shcolor: #0000;
 
 	display: inline-flex;
 	flex-shrink: 0;
@@ -33,8 +34,7 @@
 		@include hover-supported {
 			--bgcolor: var(--my-sin);
 			--brcolor: var(--my-sin);
-
-			box-shadow: 0 0 8px 0 rgb(255 179 20 / 0.5);
+			--shcolor: rgb(255 179 20 / 0.5);
 		}
 	}
 
@@ -44,9 +44,11 @@
 		@include hover-supported {
 			--bgcolor: rgb(255 255 255 / 0.1);
 			--brcolor: var(--white);
-
-			box-shadow: 0 0 8px 0 rgb(255 255 255 / 0.5);
-			
+			--shcolor: rgb(255 255 255 / 0.5);
 		}
+	}
+
+	@include hover-supported {
+		box-shadow: 0 0 rem(8) 0 var(--shcolor);
 	}
 }

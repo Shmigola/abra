@@ -1,8 +1,6 @@
 // import { useDynamicAdapt } from "./dynamicAdapt.js";
 // useDynamicAdapt();
 
-
-
 console.log("%cMade by FireMonster", "background:#8A2BE2;color:#fff;padding:4px 10px;font-weight:bold;border-radius:0.25rem;");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,29 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
 	const menuBurgerBtn = document.querySelector(".header__menu");
 	const menuBurger = document.querySelector(".menu__burger");
 	const menuBurgerClose = document.querySelector(".menu__burger .menu-close");
-	
 
-	window.addEventListener("resize", appHeight);	
-
-	
+	window.addEventListener("resize", appHeight);
 
 	// menu open/close
-	menuBurgerBtn && menuBurgerBtn.addEventListener("click", () => {
-		menuBurger.classList.add("active");
-	});
+	menuBurgerBtn &&
+		menuBurgerBtn.addEventListener("click", () => {
+			menuBurger.classList.add("active");
+		});
 
-	menuBurgerClose && menuBurgerClose.addEventListener("click", () => {
-		menuBurger.classList.remove("active");
-	});
-
-	menuBurgerBtn && document.addEventListener("click", function (e) {
-		if (!menuBurgerBtn.contains(e.target) && !menuBurger.contains(e.target)) {
+	menuBurgerClose &&
+		menuBurgerClose.addEventListener("click", () => {
 			menuBurger.classList.remove("active");
-		}
-	});
+		});
 
-	
-	
+	menuBurgerBtn &&
+		document.addEventListener("click", function (e) {
+			if (!menuBurgerBtn.contains(e.target) && !menuBurger.contains(e.target)) {
+				menuBurger.classList.remove("active");
+			}
+		});
 
 	function initLanguageSwitcher() {
 		const switcher = document.querySelector(".language__swither");
@@ -95,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	initLanguageSwitcher();
 
 	appHeight();
-	
 
 	
 });

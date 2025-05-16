@@ -1,7 +1,7 @@
 @use "../utilities/" as *;
 
 .hero {
-	block-size: rem(718);
+	block-size: rem(654);
 
 	.container {
 		position: relative;
@@ -139,14 +139,14 @@
 	}
 
 	@media (width < em(1440)) {
-		block-size: rem(595);
+		block-size: rem(525);
 	}
 
 	@media (width < em(992)) {
-		block-size: rem(522);
+		block-size: rem(458);
 	}
 
 	@media (width < em(567)) {
-		block-size: rem(490);
+		block-size: rem(426);
 	}
 }

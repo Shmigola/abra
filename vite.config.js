@@ -5,7 +5,7 @@ import fs from "fs";
 import * as sass from "sass";
 // import tailwindcss from "@tailwindcss/vite";
 import handlebars from "vite-plugin-handlebars";
-// import gday from "./src/data/gday";
+import events from "./src/public/js/api/events";
 // import girls from "./src/data/girls";
 
 function getHtmlEntryFiles(srcDir) {
@@ -143,7 +143,7 @@ export default defineConfig({
 			partialDirectory: resolve("src", "partials"),
 			reloadOnPartialChange: true,
 
-			context: {},
+			context: { events },
 
 			// щоб декілька - імпортуємо json файл і через кому додаємо
 			// context: { images, data }

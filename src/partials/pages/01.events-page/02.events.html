@@ -1,3 +1,89 @@
 <section class="events">
-	<div class="container"></div>
+	<div class="container">
+		<div class="events__actions">
+			<div id="eventsFilters" class="events__tags">
+				<button class="btn active" role="button" aria-label="כל האירועים">כל האירועים</button>
+				<button class="btn" role="button" aria-label="אירועים שהסתיימו">אירועים שהסתיימו</button>
+				<button class="btn" role="button" aria-label="אירועים חמים">אירועים חמים</button>
+				<button class="btn" role="button" aria-label="פרונטלי">פרונטלי</button>
+				<button class="btn" role="button" aria-label="וובינר">וובינר</button>
+			</div>
+
+			<div class="events__filter-btn">
+				<button class="btn btn-events-filter" role="button" aria-label="פילטרים">
+					<span class="icon icon--filter" aria-hidden="true"></span>
+					<span>פילטרים</span>
+				</button>
+			</div>
+
+			<div class="events__search">
+				<div class="form__group form__group--search">
+					<input id="eventsSearch" class="form__input" type="text" placeholder="חיפוש" />
+					<span class="icon icon--search" aria-hidden="true"></span>
+				</div>
+			</div>
+		</div>
+
+		<div id="eventsContainer" class="events__list">
+			{{#each events}}
+			<div class="events__card card">
+				<div class="card__logo">
+					<span class="icon icon--logo" aria-hidden="true"></span>
+				</div>
+				<div class="card__image">
+					<img decoding="async" src="{{image}}" alt="{{title}}" loading="lazy" />
+				</div>
+				<div class="card__body">
+					<div class="card__top">
+						{{#if badges}}
+						<ul class="card__badges">
+							{{#each badges}} {{#if bgcolor}}
+							<li style="--bgcolor: {{bgcolor}}">
+								<span class="icon {{icon}}" aria-hidden="true"></span>
+								<span>{{text}}</span>
+							</li>
+							{{else}}
+							<li>
+								<span class="icon {{icon}}" aria-hidden="true"></span>
+								<span>{{text}}</span>
+							</li>
+							{{/if}} {{/each}}
+						</ul>
+
+						{{/if}}
+						<h2 class="card__title">{{title}}</h2>
+					</div>
+					<div class="card__bottom">
+						<ul>
+							{{#each details}}
+							<li>
+								<span class="icon-wrapper">
+									<span class="icon {{icon}}" aria-hidden="true"></span>
+								</span>
+								<span>{{text}}</span>
+							</li>
+							{{/each}}
+							
+						</ul>
+						<a class="btn btn--outline-light" href="{{link}}{{id}}">
+							<span>{{link-text}}</span>
+							<span class="icon icon--arrow-left" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+
+		<div class="loader-container" hidden>
+			<div class="loader"></div>
+		</div>
+
+		<div class="events__load-more">
+			<button role="button" class="btn btn--primary" id="loadMoreEventsBtn" aria-label="טען אירועים נוספים">
+				<span>טען אירועים נוספים</span>
+				<span class="icon icon--arrow-left" aria-hidden="true"></span>
+			</button>
+		</div>
+	</div>
 </section>
