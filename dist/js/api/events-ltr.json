@@ -1,0 +1,125 @@
+[
+	{
+		"id": 1,
+		"title": "Microsoft Fabric",
+		"image": "img/events-card-03.webp",
+		"badges": [{ "icon": "icon--clock-afternoon", "text": "Sold out" }],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 2,
+		"title": "R&D Activity Kicked Off 2025 in a Big Way! 🚀",
+		"image": "img/events-card-02.webp",
+		"badges": [
+			{ "icon": "icon--rocket", "text": "Hot Event", "bgcolor": "var(--wild-watermelon)" },
+			{ "icon": "icon--clock-afternoon", "text": "Sold out" }
+		],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 3,
+		"title": "🤩 Webinar Copilot 365 🤩",
+		"image": "img/events-card-01.webp",
+		"badges": [
+			{ "icon": "icon--rocket", "text": "Hot Event", "bgcolor": "var(--wild-watermelon)" },
+			{ "icon": "icon--clock-afternoon", "text": "Sold out" }
+		],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 4,
+		"title": "Abra Dog Adoption Day ✨",
+		"image": "img/events-card-06.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 5,
+		"title": "Saluting Our Reservists! 🫡",
+		"image": "img/events-card-04.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 6,
+		"title": "Abra Dog Adoption Day ✨",
+		"image": "img/events-card-05.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 7,
+		"title": "Event Name",
+		"image": "img/events-card-09.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 8,
+		"title": "Event Name",
+		"image": "img/events-card-08.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	},
+	{
+		"id": 9,
+		"title": "Event Name",
+		"image": "img/events-card-07.webp",
+		"badges": [],
+		"details": [
+			{ "icon": "icon--map-pin-line", "text": "Hapnina 6, Ra'anana" },
+			{ "icon": "icon--calendar", "text": "15.07.2024 | 18:00" }
+		],
+		"tags": [],
+		"link": "#link-",
+		"link-text": "Register for Event"
+	}
+]
