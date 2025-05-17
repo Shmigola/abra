@@ -1,0 +1,23 @@
+<section class="team">
+	<img decoding="async" class="polygon polygon--2" src="img/svg/polygon.svg" aria-hidden="true" loading="lazy">
+	<img decoding="async" class="polygon scaled polygon--3" src="img/svg/circle.svg" aria-hidden="true" loading="lazy">
+	<div class="container container--narrower">
+		<h2 class="title">צוות הדוברים</h2>
+
+		<ul class="team__list">
+			{{#each team}}
+			<li class="team__item">
+				<a href="{{link}}{{id}}" class="team__item-photo">
+					<img decoding="async" class="" src="{{photo-src}}" alt="{{name}}" loading="lazy" />
+				</a>
+				<div class="team__item-body">
+					<a href="{{link}}{{id}}" class="team__item-name">{{name}}</a>
+					<p class="team__item-position">{{position}}</p>
+					<p class="team__company">{{company}}</p>
+				</div>
+			</li>
+			{{/each}}
+			
+		</ul>
+	</div>
+</section>

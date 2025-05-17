@@ -1,0 +1,53 @@
+[
+	{
+		"title": "קבלת פנים",
+		"title-en": "Welcome Reception",
+		"description": "הגעה מוקדמת - קבלת פנים, אוכל ונשנושים",
+		"description-en": "Early arrival – welcome reception, food, and snacks",
+		"time": "09:00-10:00"
+	},
+	{
+		"title": "פתיחה של ראש צוות פיתוח בחטיבת R&D",
+		"title-en": "Opening by Head of R&D Development Team",
+		"description": "נכיר את ראש צוות הפיתוח של חטיבת הr&d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.",
+		"description-en": "Meet the head of the R&D development team leading AI in our various projects and get relevant examples on the topic.",
+		"speaker": "ישראל ישראלי - ראש צוות הפיתוח",
+		"speaker-en": "Israel Israeli – Head of Development Team",
+		"time": "10:00-11:00"
+	},
+	{
+		"title": "דוגמאות מפרויקטים אישיים",
+		"title-en": "Examples from Personal Projects",
+		"description": "נכיר את ראש צוות הפיתוח של חטיבת הr&d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.",
+		"description-en": "Meet the head of the R&D development team leading AI in our various projects and get relevant examples on the topic.",
+		"speaker": "רונן כהן - מוביל תחום AI",
+		"speaker-en": "Ronen Cohen – AI Domain Lead",
+		"time": "11:00-12:00"
+	},
+	{
+		"title": "דוגמאות מפרויקטים אישיים",
+		"title-en": "Examples from Personal Projects",
+		"description": "נכיר את ראש צוות הפיתוח של חטיבת הr&d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.",
+		"description-en": "Meet the head of the R&D development team leading AI in our various projects and get relevant examples on the topic.",
+		"speaker": "רונן כהן - מוביל תחום AI",
+		"speaker-en": "Ronen Cohen – AI Domain Lead",
+		"time": "12:00-14:00"
+	},
+	{
+		"title": "הכלים שלנו",
+		"title-en": "Our Tools",
+		"description": "נכיר את ראש צוות הפיתוח של חטיבת הr&d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.",
+		"description-en": "Meet the head of the R&D development team leading AI in our various projects and get relevant examples on the topic.",
+		"speaker": "יפתח יצחקי - מפתח פרונט בצוות האלופים",
+		"speaker-en": "Yiftach Yitzhaki – Frontend Developer, Champions Team",
+		"time": "14:00-16:00"
+	},
+	{
+		"title": "פתיחה של ראש צוות פיתוח בחטיבת R&D",
+		"title-en": "Opening by Head of R&D Development Team",
+		"description": "נכיר את ראש צוות הפיתוח של חטיבת הr&d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.",
+		"description-en": "Meet the head of the R&D development team leading AI in our various projects and get relevant examples on the topic.",
+		"time": "10:00 -11:00",
+		"display": "vertical"
+	}
+]

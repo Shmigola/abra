@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+	{{>components/head index='Event page'}}
+
+	<body>
+		<div class="body-wrapper">
+			{{>components/rtl/header}}
+			<main>
+				{{>pages/rtl/02.event-page/01.hero-section}}
+				<div class="sections-wrapper">
+					{{>pages/rtl/02.event-page/02.event-content}}
+					{{>pages/rtl/02.event-page/03.speakers-team}}
+					{{>pages/rtl/02.event-page/04.partners-logo title="השותפים שלנו"}}
+					{{>pages/rtl/02.event-page/05.timer title="האירוע מתחיל בעוד"}}
+					{{>pages/rtl/02.event-page/06.register-form title="הירשמו לאירוע!"}}
+
+					
+					<!-- <img decoding="async" class="polygon polygon--2" src="img/svg/polygon.svg" aria-hidden="true" loading="lazy"> -->
+
+					<div class="sticky-button _event-register">
+						<a class="btn btn--primary" href="#register-form">
+							<span>הרשמה לאירוע</span>
+							<!-- <span>Event registration</span> -->
+							<span class="icon icon--android" aria-hidden="true"></span>
+						</a>
+
+					</div>
+				</div>
+			</main>
+			{{>components/rtl/footer}}
+			
+		</div>
+
+		{{>components/scripts timer='true' spollers='true'}}
+	</body>
+</html>

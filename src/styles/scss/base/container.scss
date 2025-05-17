@@ -1,0 +1,23 @@
+@use "../utilities/" as *;
+
+.container {
+	margin-inline: auto;
+	max-inline-size: rem(1456);
+	padding-inline: rem(24);
+
+	&--narrower {
+		max-inline-size: rem(1214);
+	}
+
+	@media (width < em(1440)) {
+		max-inline-size: rem(848);
+	}
+
+	@media (width < em(992)) {
+		max-inline-size: rem(566);
+	}
+
+	@media (width < em(576)) {
+		max-inline-size: rem(390);
+	}
+}

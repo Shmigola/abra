@@ -1,0 +1,121 @@
+@use "../utilities/" as *;
+
+.team {
+	&__list {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		gap: rem(46) rem(32);
+
+		@media (width < em(992)) {
+			gap: rem(64) rem(16);
+		}
+	}
+
+	&__item {
+		--bcolor: rgb(255 255 255 / 0.12);
+
+		display: flex;
+		flex: 0 1 calc(50% - rem(32));
+		border: 1px solid var(--bcolor);
+		border-radius: rem(28);
+		padding: rem(8);
+		letter-spacing: 0.02em;
+		background-color: rgb(255 255 255 / 0.02);
+		transition: all 0.2s ease-out;
+		gap: rem(24);
+		min-block-size: rem(156);
+
+		@include hover-supported {
+			--bcolor: rgb(255 255 255 / 0.5);
+
+			.team__item-photo {
+				img {
+					scale: 1.05;
+				}
+			}
+		}
+
+		@media (width < em(992)) {
+			flex: 0 1 calc(50% - rem(16));
+			flex-flow: column;
+			border: 0;
+			padding: 0;
+			gap: 0;
+			min-block-size: rem(320);
+		}
+
+		@media (width < em(576)) {
+			flex: 1 0 100%;
+		}
+	}
+
+	&__item-photo {
+		flex-shrink: 0;
+		overflow: clip;
+		border-radius: rem(24);
+		inline-size: rem(140);
+		min-block-size: rem(140);
+
+		img {
+			object-fit: cover;
+			transition: all 0.2s ease-out;
+			block-size: 100%;
+			inline-size: 100%;
+		}
+
+		@media (width < em(992)) {
+			border-radius: rem(28) rem(28) 0 0;
+			block-size: rem(160);
+			inline-size: 100%;
+			min-block-size: unset;
+		}
+	}
+
+	&__item-body {
+		display: flex;
+		flex-flow: column;
+		block-size: 100%;
+		gap: rem(15);
+		padding-block: rem(20);
+
+		@media (width < em(992)) {
+			border: 1px solid var(--bcolor);
+			border-radius: 0 0 rem(28) rem(28);
+			padding: rem(16);
+			border-block-start: 0;
+		}
+	}
+
+	&__item-name {
+		--color: var(--orange-peel);
+
+		font-weight: 700;
+		font-size: rem(24);
+		text-transform: uppercase;
+		color: var(--color);
+
+		@include hover-supported {
+			--color: var(--my-sin);
+		}
+	}
+
+	&__item-position {
+		font-size: rem(20);
+		text-transform: capitalize;
+
+		@media (width < em(992)) {
+			font-size: rem(18);
+		}
+	}
+
+	&__company {
+		font-weight: 700;
+		font-size: rem(20);
+		margin-block-start: auto;
+
+		@media (width < em(992)) {
+			font-size: rem(18);
+		}
+	}
+}

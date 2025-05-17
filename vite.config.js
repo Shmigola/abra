@@ -7,7 +7,9 @@ import * as sass from "sass";
 import handlebars from "vite-plugin-handlebars";
 import events from "./src/public/js/api/events";
 import eventsltr from "./src/public/js/api/events-ltr";
-// import girls from "./src/data/girls";
+import eventlist from "./src/public/js/api/event-content-list";
+import team from "./src/public/js/api/team";
+
 
 function getHtmlEntryFiles(srcDir) {
 	const entry = {};
@@ -144,7 +146,7 @@ export default defineConfig({
 			partialDirectory: resolve("src", "partials"),
 			reloadOnPartialChange: true,
 
-			context: { events, eventsltr },
+			context: { events, eventsltr, eventlist, team },
 
 			// щоб декілька - імпортуємо json файл і через кому додаємо
 			// context: { images, data }

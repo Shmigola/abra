@@ -1,0 +1,90 @@
+[
+	{
+		"id": 1,
+		"name": "יפתח ישראל",
+		"name-en": "Yiftach Israel",
+		"position": "vp r&d",
+		"position-en": "vp r&d",
+		"company": "abra",
+		"company-en": "abra",
+		"photo-src": "img/t-02.webp",
+		"link": "#link-"
+	},
+	{
+		"id": 2,
+		"name": "יהונתן קרייזנר",
+		"name-en": "Jonathan Kreizner",
+		"position": "Head of product",
+		"position-en": "Head of product",
+		"company": "abra",
+		"company-en": "abra",
+		"photo-src": "img/t-01.webp",
+		"link": "#link-"
+	},
+	{
+		"id": 3,
+		"name": "רוני גולן",
+		"name-en": "Roni Golan",
+		"position": "Head of product",
+		"position-en": "Head of product",
+		"company": "Ronlight",
+		"company-en": "Ronlight",
+		"photo-src": "img/t-04.webp",
+		"link": "#link-"
+	},
+	{
+		"id": 4,
+		"name": "רונן בר",
+		"name-en": "Ronen Ber",
+		"position": "ראש צוות פיתוח",
+		"position-en": "development team leader",
+		"company": "abra",
+		"company-en": "abra",
+		"photo-src": "img/t-03.webp",
+		"link": "#link-"
+	},
+	{
+		"id": 5,
+		"name": "חיים לייבוביץ",
+		"name-en": "Chaim Leibovitz",
+		"position": "Head of product",
+		"position-en": "Head of product",
+		"company": "applinkup",
+		"company-en": "applinkup",
+		"photo-src": "img/t-06.webp",
+		"link": "#link-"
+	},
+	{
+		"id": 6,
+		"name": "חיים לייבוביץ",
+		"name-en": "Chaim Leibovitz",
+		"position": "Head of product",
+		"position-en": "Head of product",
+		"company": "applinkup",
+		"company-en": "applinkup",
+		"photo-src": "img/t-05.webp",
+		"link": "#link-"
+	},
+	{
+		"id": 7,
+		"name": "גבי אורי",
+		"name-en": "Gabi Uri",
+		"position": "Head of product",
+		"position-en": "Head of product",
+		"company": "red hat",
+		"company-en": "red hat",
+		"photo-src": "img/t-08.webp",
+		"link": "#link-"
+	},
+	{
+		"id": 8,
+		"name": "אייל גולן",
+		"name-en": "Eyal Golan",
+		"position": "Head of product",
+		"position-en": "Head of product",
+		"company": "red hat",
+		"company-en": "red hat",
+		"photo-src": "img/t-07.webp",
+		"link": "#link-"
+	}
+]

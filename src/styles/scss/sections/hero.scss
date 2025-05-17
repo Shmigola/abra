@@ -47,7 +47,7 @@
 			}
 		}
 
-		img {
+		img, video {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -136,6 +136,20 @@
 
 	form {
 		inline-size: 100%;
+	}
+
+	&--event {
+		.hero {
+			&__body {
+				max-inline-size: rem(694);
+			}
+
+			&__subtitle {
+				+ a {
+					margin-block-start: rem(48);
+				}
+			}
+		}
 	}
 
 	@media (width < em(1440)) {

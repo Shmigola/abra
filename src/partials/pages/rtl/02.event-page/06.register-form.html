@@ -1,0 +1,83 @@
+<section class="event-form" id="register-form">
+	<div class="event-form__background">
+		<img decoding="async" class="" src="img/bg-02.webp" aria-hidden="true" loading="lazy" />
+	</div>
+	<form>
+		<div class="container">
+			<div class="event-form__form">
+				<h2 class="title">{{title}}</h2>
+				<div class="event-form__form-body">
+					<div class="form__row">
+						<div class="form__group">
+							<label class="form__label-text" for="first-name">שם פרטי *</label>
+							<input id="first-name" type="text" class="form__input" placeholder="מיכאל" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>הודעה</span>
+							</span>
+						</div>
+						<div class="form__group">
+							<label class="form__label-text" for="last-name">שם משפחה *</label>
+							<input id="last-name" type="text" class="form__input" placeholder="כהן" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>הודעה</span>
+							</span>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<label class="form__label-text" for="work-email">מייל עבודה *</label>
+							<input id="work-email" type="email" class="form__input" placeholder="example@abra-it.com" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>הודעה</span>
+							</span>
+						</div>
+						<div class="form__group">
+							<label class="form__label-text" for="phone">מספר טלפון *</label>
+							<input id="phone" type="text" class="form__input" placeholder="050-1234567" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>הודעה</span>
+							</span>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<label class="form__label-text" for="role">תפקיד *</label>
+							<input id="role" type="email" class="form__input" placeholder="למשל מיכאל" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>הודעה</span>
+							</span>
+						</div>
+						<div class="form__group">
+							<label class="form__label-text" for="company">שם החברה *</label>
+							<input id="company" type="text" class="form__input" placeholder="אברא" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>הודעה</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="form__group">
+						<label class="form__label-text" for="textarea">תרגיש חופשי לשתף אותנו בכל מידע נוסף</label>
+						<textarea id="textarea" type="email" class="form__input" placeholder="טקסט"></textarea>
+					</div>
+
+					<label class="form__checkbox">
+						<input type="checkbox" name="checkbox" class="form__checkbox-input" />
+						<span class="form__checkbox-box">
+							<span class="icon icon--check" aria-hidden="true"></span>
+						</span>
+						<span class="form__checkbox-label">אשמח להישאר מעודכן בהשקות מוצרים חדשות של אברא, בחדשות מהתעשייה ובאירועים מיוחדים (ניתן להסיר את ההרשמה בכל עת)</span>
+					</label>
+
+					<button class="btn btn--primary" role="button" aria-label="הרשם עכשיו!" type="submit">הרשם עכשיו!</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>

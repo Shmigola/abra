@@ -1,0 +1,101 @@
+@use "../utilities/" as *;
+
+.event-form {
+	position: relative;
+	overflow: clip;
+	margin-block-start: rem(-90);
+	padding-block-start: rem(240);
+
+	&__background {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		overflow: clip;
+		border-radius: 50%;
+		transform: translateX(-50%);
+		pointer-events: none;
+		block-size: 140%;
+		inline-size: 110%;
+
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			display: block;
+			background: linear-gradient(180deg, #121f3f 0%, rgb(18 31 63 / 0) 100%);
+			inset: 0;
+		}
+
+		img {
+			object-fit: cover;
+			block-size: 100%;
+			inline-size: 100%;
+		}
+
+
+		@media (width < em(1440)) {
+			block-size: rem(1600);
+			inline-size: rem(1600);
+		}
+
+		@media (width < em(992)) {
+			top: rem(200);
+			block-size: rem(1380);
+			inline-size: rem(1380);
+			
+
+			&::after {
+				inset: 0 0 40%;
+			}
+		}
+
+		@media (width < em(576)) {
+			block-size: rem(1380);
+			inline-size: rem(1380);
+		}
+	}
+
+	&__form {
+		position: relative;
+		z-index: 2;
+		border-radius: rem(24);
+		padding: rem(64) rem(80);
+		background-color: rgb(11 23 54 / 0.9);
+		backdrop-filter: blur(rem(40));
+		margin-inline: auto;
+		max-inline-size: rem(926);
+
+		@media (width < em(992)) {
+			padding: rem(64) rem(48);
+		}
+
+		@media (width < em(380)) {
+			padding: rem(32) rem(16);
+		}
+	}
+
+	&__form-body {
+		display: flex;
+		flex-flow: column;
+		gap: rem(24);
+
+		@media (width < em(380)) {
+			gap: rem(12);
+		}
+	}
+
+	.btn {
+		&[type="submit"] {
+			width: 100%;
+		}
+	}
+
+	@media (width < em(1440)) {
+		margin-block-start: rem(0);
+		padding-block-start: rem(136);
+	}
+
+	@media (width < em(992)) {
+		padding-block-start: rem(64);
+	}
+}

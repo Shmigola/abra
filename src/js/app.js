@@ -89,6 +89,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	initLanguageSwitcher();
 
 	appHeight();
-
-	
 });

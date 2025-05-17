@@ -1,0 +1,30 @@
+@use "../utilities/" as *;
+
+.partners {
+	&__logo-list {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		row-gap: rem(48);
+
+		> li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: rem(10);
+			block-size: rem(80);
+			inline-size: 25%;
+			min-inline-size: rem(168);
+
+			img {
+				object-fit: contain;
+				block-size: 100%;
+				inline-size: 100%;
+			}
+
+			@media (width < em(992)) {
+				min-inline-size: rem(134);
+			}
+		}
+	}
+}

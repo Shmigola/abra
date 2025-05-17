@@ -2,7 +2,9 @@
 
 .form {
 	&__group {
+		position: relative;
 		display: flex;
+		flex: 1;
 		flex-flow: column;
 		margin-block-end: rem(12);
 
@@ -27,6 +29,10 @@
 					background-color: rgb(255 255 255 / 0.04);
 				}
 			}
+
+			.form__error-message {
+				display: flex;
+			}
 		}
 
 		&--search {
@@ -36,11 +42,11 @@
 				border-radius: rem(100);
 				padding-inline-start: rem(40);
 			}
-			
+
 			.icon--search {
 				position: absolute;
 				top: rem(6);
-				inset-inline-start: rem(12)
+				inset-inline-start: rem(12);
 			}
 		}
 	}
@@ -91,7 +97,7 @@
 	&__error-message {
 		position: absolute;
 		bottom: rem(-16);
-		display: flex;
+		display: none;
 		align-items: center;
 		font-size: rem(12);
 		line-height: 120%;
@@ -161,5 +167,27 @@
 		line-height: 143%;
 		letter-spacing: 0.01em;
 		color: var(--silver);
+	}
+
+	&__row {
+		display: flex;
+		gap: rem(48);
+
+		@media (width < em(992)) {
+			flex-flow: column;
+			gap: rem(24);
+		}
+
+		@media (width < em(380)) {
+			gap: rem(12);
+		}
+	}
+}
+
+textarea {
+	&.form__input {
+		font-family: var(--primary);
+		resize: none;
+		block-size: rem(118);
 	}
 }

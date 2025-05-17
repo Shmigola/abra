@@ -1,0 +1,20 @@
+<section class="event-content">
+	<img decoding="async" class="polygon polygon--1 scaled" src="img/svg/polygon.svg" aria-hidden="true" loading="lazy">
+	<div class="container container--narrower">
+		<h2 class="title">Event content</h2>
+		<ul class="event-content__list">
+			{{#each eventlist}}
+			<li class="{{display}}">
+				<div class="event-time">{{time}}</div>
+				<div class="event-body">
+					<h3 class="event-title">{{title-en}}</h3>
+					<p class="event-description">{{description-en}}</p>
+					{{#if speaker-en}}
+					<p class="event-speaker">{{speaker-en}}</p>
+					{{/if}}
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</section>

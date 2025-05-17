@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Abra - Event page</title>
+		
+		<script type="module" crossorigin src="./js/app.min.js"></script>
+		<link rel="stylesheet" crossorigin href="./css/styles.min.css">
+	</head>
+
+	<body>
+		<div class="body-wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrapper">
+						<button class="header__burger" type="button" aria-expanded="false">
+							<span class="icon icon--list" aria-hidden="true"></span>
+							<span class="sr-only">תפריט פתוח</span>
+						</button>
+						<a href="#" aria-label="Home" class="header__logo">
+							<picture>
+								<source media="(width < 36rem)" srcset="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20viewBox='0%200%2036%2024'%3e%3c!--%20Generator:%20Adobe%20Illustrator%2029.5.1,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%202.1.0%20Build%20141)%20--%3e%3cdefs%3e%3cstyle%3e%20.st0%20{%20fill:%20%23f4774b;%20}%20.st1%20{%20fill:%20%23ef5488;%20}%20.st2%20{%20fill:%20%23f99f1b;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='st0'%20d='M.29,18.95c.04-.19.07-.38.11-.57.16-.82.56-1.57,1.15-2.16.86-.87,1.74-1.72,2.61-2.58.02-.02.04-.03.06-.05l6.42,6.33-.13.13c-.84.83-1.68,1.67-2.53,2.49-.75.73-1.74,1.16-2.78,1.22-2.5.2-4.72-1.94-4.88-4.14,0-.04-.02-.07-.04-.1v-.57Z'/%3e%3cpath%20class='st0'%20d='M17.94,12.27l-6.14-6.05L17.97.15l6.14,6.05-6.16,6.07Z'/%3e%3cpath%20class='st1'%20d='M29.33,12.88v1.69c0,.1-.04.19-.11.26-.8.8-1.6,1.59-2.41,2.37-.08.07-.18.11-.28.11-1.14,0-2.28,0-3.43,0-.1,0-.2-.04-.28-.11-.81-.78-1.61-1.57-2.41-2.37-.07-.08-.11-.18-.11-.28,0-1.12,0-2.24,0-3.36,0-.1.04-.2.12-.28.8-.8,1.6-1.59,2.41-2.37.08-.07.19-.12.3-.12,1.13,0,2.25,0,3.39,0,.11,0,.22.05.3.12.81.78,1.61,1.57,2.41,2.37.07.08.11.18.12.28,0,.57,0,1.13,0,1.7Z'/%3e%3cpath%20class='st0'%20d='M25.35,19.8l6.42-6.32s.1.09.15.14l2.51,2.47c.81.81,1.26,1.9,1.26,3.04s-.45,2.23-1.26,3.04c-.7.7-1.5,1.23-2.5,1.4-1.49.26-2.8-.1-3.89-1.13-.89-.84-1.75-1.71-2.62-2.57-.02-.02-.05-.05-.07-.08Z'/%3e%3cpath%20class='st2'%20d='M10.93,17.24c-1.18,0-2.31-.45-3.15-1.27-.41-.41-.74-.89-.97-1.42-.22-.53-.34-1.1-.34-1.68,0-.58.11-1.15.33-1.68.22-.53.55-1.02.96-1.43.84-.83,1.97-1.3,3.15-1.3.59,0,1.17.11,1.71.33.54.22,1.04.55,1.45.96.41.41.74.89.97,1.42.22.53.34,1.11.34,1.68s-.12,1.15-.34,1.68c-.22.53-.55,1.02-.97,1.42-.84.82-1.97,1.28-3.15,1.28h0Z'/%3e%3c/svg%3e" />
+								<img aria-hidden="true" loading="eager" decoding="async" src="./img/svg/logo-light.svg" alt="Logo" width="120" height="24" />
+							</picture>
+						</a>
+						<nav class="header__nav">
+							<ul>
+								<li>
+									<a href="#" aria-expanded="false">אודותינו</a>
+								</li>
+								<li class="has-children">
+									<a href="#" aria-expanded="false">פתרונות טכנולוגים</a>
+									<span class="icon icon--chevron-down"></span>
+								</li>
+								<li>
+									<a href="#" aria-expanded="false">לקוחות ופרויקטים</a>
+								</li>
+								
+								<li>
+									<a href="#" aria-expanded="false">טכנולוגיה וחדשנות</a>
+								</li>
+								<li class="active">
+									<a href="#" aria-expanded="false">אירועים</a>
+								</li>
+								<li>
+									<a href="#" aria-expanded="false">קריירה</a>
+								</li>
+								<li>
+									<a href="#" aria-expanded="false">קשרי משקיעים</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__actions">
+							<div class="language">
+								<button type="button" class="language__swither" role="button" aria-label="בחר שפה, שפה נוכחית עברית" aria-expanded="false" aria-controls="language-options">
+									<div class="language__value-wrapper">
+										<span class="language__current-value" lang="he" xml:lang="he">
+											<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cmask%20id='a'%3e%3ccircle%20cx='256'%20cy='256'%20r='256'%20fill='%23fff'/%3e%3c/mask%3e%3cg%20mask='url(%23a)'%3e%3cpath%20fill='%23eee'%20d='M0%200h512v55.7l-25%2032.7%2025%2034v267.2l-26%2036%2026%2030.7V512H0v-55.7l24.8-34.1L0%20389.6V122.4l27.2-33.2L0%2055.7z'/%3e%3cpath%20fill='%230052b4'%20d='M0%2055.7v66.7h512V55.7zm0%20333.9v66.7h512v-66.7zm352.4-189.3H288l-32-55.6-32.1%2055.6h-64.3l32.1%2055.7-32%2055.7h64.2l32.1%2055.6%2032.1-55.6h64.3L320.3%20256l32-55.7zm-57%2055.7l-19.7%2034.2h-39.4L216.5%20256l19.8-34.2h39.4l19.8%2034.2zM256%20187.6l7.3%2012.7h-14.6zm-59.2%2034.2h14.7l-7.4%2012.7zm0%2068.4l7.3-12.7%207.4%2012.7zm59.2%2034.2l-7.3-12.7h14.6zm59.2-34.2h-14.7l7.4-12.7zm-14.7-68.4h14.7l-7.3%2012.7z'/%3e%3c/g%3e%3c/svg%3e" aria-hidden="true" />
+										</span>
+									</div>
+								</button>
+								<ul class="language__submenu" role="listbox">
+									<li class="language__submenu-item">
+										<a tabindex="-1" aria-selected="false" lang="he" hreflang="he" data-value="he" data-language-name="עברית" data-base-aria-label="בחר שפה, שפה נוכחית" role="option" href="#">
+											<span lang="he" xml:lang="he">
+												<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cmask%20id='a'%3e%3ccircle%20cx='256'%20cy='256'%20r='256'%20fill='%23fff'/%3e%3c/mask%3e%3cg%20mask='url(%23a)'%3e%3cpath%20fill='%23eee'%20d='M0%200h512v55.7l-25%2032.7%2025%2034v267.2l-26%2036%2026%2030.7V512H0v-55.7l24.8-34.1L0%20389.6V122.4l27.2-33.2L0%2055.7z'/%3e%3cpath%20fill='%230052b4'%20d='M0%2055.7v66.7h512V55.7zm0%20333.9v66.7h512v-66.7zm352.4-189.3H288l-32-55.6-32.1%2055.6h-64.3l32.1%2055.7-32%2055.7h64.2l32.1%2055.6%2032.1-55.6h64.3L320.3%20256l32-55.7zm-57%2055.7l-19.7%2034.2h-39.4L216.5%20256l19.8-34.2h39.4l19.8%2034.2zM256%20187.6l7.3%2012.7h-14.6zm-59.2%2034.2h14.7l-7.4%2012.7zm0%2068.4l7.3-12.7%207.4%2012.7zm59.2%2034.2l-7.3-12.7h14.6zm59.2-34.2h-14.7l7.4-12.7zm-14.7-68.4h14.7l-7.3%2012.7z'/%3e%3c/g%3e%3c/svg%3e" aria-hidden="true" />
+											</span>
+										</a>
+									</li>
+									<li class="language__submenu-item">
+										<a tabindex="-1" aria-selected="false" lang="en" hreflang="en" data-value="en" data-language-name="English" data-base-aria-label="Select language, current language" role="option" href="#">
+											<span lang="en" xml:lang="en">
+												<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cmask%20id='a'%3e%3ccircle%20cx='256'%20cy='256'%20r='256'%20fill='%23fff'/%3e%3c/mask%3e%3cg%20mask='url(%23a)'%3e%3cpath%20fill='%23eee'%20d='M0%200h47.4l76.4%2021%2065.4-21h33.4l34.2%2016.6L289.4%200h33.4l70.4%2022.8L464.8%200h15.8l12.2%207.3L512%200v47.3l-19.9%2078%2019.9%2063.9v33.4l-16.4%2030.6%2016.4%2036.2v33.4l-15.1%2068.7%2015.1%2073.3v15.9l-7.8%2010.9L512%20512h-47.3l-71-17.5-70.9%2017.5h-33.4l-30-19.7-36.8%2019.7h-33.3l-63.7-20.2L47.3%20512H31.4l-10.6-8L0%20512v-47.3l22.8-79L0%20322.9v-33.4l25.3-32L0%20222.6v-33.4l22.2-64.6L0%2047.2V31.4l8-7.8z'/%3e%3cpath%20fill='%230052b4'%20d='M47.4%200l141.8%20142V0H47.4zm275.4%200v142l142-142h-142zM0%2047.2v142h142L0%2047.2zm512%20.1L370.1%20189.2H512V47.3zM0%20322.8v141.9l141.9-141.9H0zm370%200l142%20142v-142H370zM189.3%20370l-142%20142h142V370zm133.5.1V512h141.9L322.8%20370.1z'/%3e%3cpath%20fill='%23d80027'%20d='M222.6%200v222.6H0v66.8h222.6V512h66.8V289.4H512v-66.8H289.4V0h-66.8z'/%3e%3cpath%20fill='%23d80027'%20d='M0%200v31.4l157.7%20157.8h31.5L0%200zm480.6%200L322.8%20157.7v31.5L512%200h-31.4zM189.2%20322.8L0%20512h31.4l157.8-157.7v-31.5zm133.6%200L511.9%20512h.1v-31.3L354.3%20322.8h-31.5z'/%3e%3c/g%3e%3c/svg%3e" aria-hidden="true" />
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="header__search">
+								<button class="btn btn--outline-light header__search-btn" role="button" aria-label="חיפוש">
+									<span class="icon icon--search" aria-hidden="true"></span>
+									<span>חיפוש</span>
+								</button>
+							</div>
+							<div class="header__contact-us">
+								<button class="btn btn--primary" role="button" aria-label="צור קשר">
+									<span class="icon icon--headphones" aria-hidden="true"></span>
+									<span>צור קשר</span>
+								</button>
+			
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>	
+			<main>
+				<section class="hero hero--event">
+					<div class="hero__background">
+						<video src="videos/video-bg-01.webm" aria-hidden="true" autoplay muted loop />
+					</div>
+					<div class="container">
+						<div class="hero__body">
+							<h1 class="hero__title">איך לשלב כלי AI בפיתוח הפרויקט שלכםמעבר</h1>
+							<p class="hero__subtitle"> הפנינה 6, רעננה | 21.04.2025 - 18:00</p>
+							<a href="#register-form" class="btn btn--primary">
+								<span>הרשמה לאירוע</span>
+								<span class="icon icon--arrow-left" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<div class="sections-wrapper">
+					<section class="event-content">
+						<img decoding="async" class="polygon polygon--1 scaled" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='201'%20height='201'%20viewBox='0%200%20201%20201'%20fill='none'%3e%3cpath%20d='M154.677%2014.3868L199.867%2077.8487L186.95%20154.677L123.489%20199.867L46.6597%20186.949L1.46882%20123.489L14.387%2046.6596L77.8486%201.46848L154.677%2014.3868Z'%20fill='url(%23paint0_linear_172_7082)'%20stroke='%23FF9F00'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_172_7082'%20x1='3.78756'%20y1='-8.0457'%20x2='138.617'%20y2='196.943'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0.08'/%3e%3cstop%20offset='1'%20stop-color='white'%20stop-opacity='0'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" loading="lazy">
+						<div class="container container--narrower">
+							<h2 class="title">תוכן האירוע</h2>
+							<ul class="event-content__list">
+								<li class="">
+									<div class="event-time">09:00-10:00</div>
+									<div class="event-body">
+										<h3 class="event-title">קבלת פנים</h3>
+										<p class="event-description">הגעה מוקדמת - קבלת פנים, אוכל ונשנושים</p>
+									</div>
+								</li>
+								<li class="">
+									<div class="event-time">10:00-11:00</div>
+									<div class="event-body">
+										<h3 class="event-title">פתיחה של ראש צוות פיתוח בחטיבת R&amp;D</h3>
+										<p class="event-description">נכיר את ראש צוות הפיתוח של חטיבת הr&amp;d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.</p>
+										<p class="event-speaker">ישראל ישראלי - ראש צוות הפיתוח</p>
+									</div>
+								</li>
+								<li class="">
+									<div class="event-time">11:00-12:00</div>
+									<div class="event-body">
+										<h3 class="event-title">דוגמאות מפרויקטים אישיים</h3>
+										<p class="event-description">נכיר את ראש צוות הפיתוח של חטיבת הr&amp;d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.</p>
+										<p class="event-speaker">רונן כהן - מוביל תחום AI</p>
+									</div>
+								</li>
+								<li class="">
+									<div class="event-time">12:00-14:00</div>
+									<div class="event-body">
+										<h3 class="event-title">דוגמאות מפרויקטים אישיים</h3>
+										<p class="event-description">נכיר את ראש צוות הפיתוח של חטיבת הr&amp;d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.</p>
+										<p class="event-speaker">רונן כהן - מוביל תחום AI</p>
+									</div>
+								</li>
+								<li class="">
+									<div class="event-time">14:00-16:00</div>
+									<div class="event-body">
+										<h3 class="event-title">הכלים שלנו</h3>
+										<p class="event-description">נכיר את ראש צוות הפיתוח של חטיבת הr&amp;d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.</p>
+										<p class="event-speaker">יפתח יצחקי - מפתח פרונט בצוות האלופים</p>
+									</div>
+								</li>
+								<li class="vertical">
+									<div class="event-time">10:00 -11:00</div>
+									<div class="event-body">
+										<h3 class="event-title">פתיחה של ראש צוות פיתוח בחטיבת R&amp;D</h3>
+										<p class="event-description">נכיר את ראש צוות הפיתוח של חטיבת הr&amp;d שמוביל את תחום הAI בפרויקטים השונים שלנו, ונקבל דוגמאות רלוונטיות לנושא.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="team">
+						<img decoding="async" class="polygon polygon--2" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='201'%20height='201'%20viewBox='0%200%20201%20201'%20fill='none'%3e%3cpath%20d='M154.677%2014.3868L199.867%2077.8487L186.95%20154.677L123.489%20199.867L46.6597%20186.949L1.46882%20123.489L14.387%2046.6596L77.8486%201.46848L154.677%2014.3868Z'%20fill='url(%23paint0_linear_172_7082)'%20stroke='%23FF9F00'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_172_7082'%20x1='3.78756'%20y1='-8.0457'%20x2='138.617'%20y2='196.943'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0.08'/%3e%3cstop%20offset='1'%20stop-color='white'%20stop-opacity='0'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" loading="lazy">
+						<img decoding="async" class="polygon scaled polygon--3" src="data:image/svg+xml,%3csvg%20width='98'%20height='98'%20viewBox='0%200%2098%2098'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='49'%20cy='49'%20r='48.5'%20fill='url(%23paint0_linear_172_7081)'%20stroke='%23FF9F00'%20/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_172_7081'%20x1='15.4612'%20y1='-12.1311'%20x2='56.3738'%20y2='98'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0.08'%20/%3e%3cstop%20offset='1'%20stop-color='white'%20stop-opacity='0'%20/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" loading="lazy">
+						<div class="container container--narrower">
+							<h2 class="title">צוות הדוברים</h2>
+					
+							<ul class="team__list">
+								<li class="team__item">
+									<a href="#link-1" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-02.webp" alt="יפתח ישראל" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-1" class="team__item-name">יפתח ישראל</a>
+										<p class="team__item-position">vp r&amp;d</p>
+										<p class="team__company">abra</p>
+									</div>
+								</li>
+								<li class="team__item">
+									<a href="#link-2" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-01.webp" alt="יהונתן קרייזנר" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-2" class="team__item-name">יהונתן קרייזנר</a>
+										<p class="team__item-position">Head of product</p>
+										<p class="team__company">abra</p>
+									</div>
+								</li>
+								<li class="team__item">
+									<a href="#link-3" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-04.webp" alt="רוני גולן" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-3" class="team__item-name">רוני גולן</a>
+										<p class="team__item-position">Head of product</p>
+										<p class="team__company">Ronlight</p>
+									</div>
+								</li>
+								<li class="team__item">
+									<a href="#link-4" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-03.webp" alt="רונן בר" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-4" class="team__item-name">רונן בר</a>
+										<p class="team__item-position">ראש צוות פיתוח</p>
+										<p class="team__company">abra</p>
+									</div>
+								</li>
+								<li class="team__item">
+									<a href="#link-5" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-06.webp" alt="חיים לייבוביץ" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-5" class="team__item-name">חיים לייבוביץ</a>
+										<p class="team__item-position">Head of product</p>
+										<p class="team__company">applinkup</p>
+									</div>
+								</li>
+								<li class="team__item">
+									<a href="#link-6" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-05.webp" alt="חיים לייבוביץ" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-6" class="team__item-name">חיים לייבוביץ</a>
+										<p class="team__item-position">Head of product</p>
+										<p class="team__company">applinkup</p>
+									</div>
+								</li>
+								<li class="team__item">
+									<a href="#link-7" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-08.webp" alt="גבי אורי" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-7" class="team__item-name">גבי אורי</a>
+										<p class="team__item-position">Head of product</p>
+										<p class="team__company">red hat</p>
+									</div>
+								</li>
+								<li class="team__item">
+									<a href="#link-8" class="team__item-photo">
+										<img decoding="async" class="" src="./img/t-07.webp" alt="אייל גולן" loading="lazy" />
+									</a>
+									<div class="team__item-body">
+										<a href="#link-8" class="team__item-name">אייל גולן</a>
+										<p class="team__item-position">Head of product</p>
+										<p class="team__company">red hat</p>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</section>
+					<section class="partners">
+						<div class="container container--narrower">
+							<h2 class="title">השותפים שלנו</h2>
+							<ul class="partners__logo-list">
+								<li>
+									<img decoding="async" class="" src="./img/svg/logo-rapyd.svg" alt="rapyd" loading="lazy" />
+								</li>
+								<li>
+									<img decoding="async" class="" src="./img/svg/logo-augury.svg" alt="augury" loading="lazy" />
+								</li>
+								<li>
+									<img decoding="async" class="" src="./img/svg/logo-appsflyer.svg" alt="appsflyer" loading="lazy" />
+								</li>
+								<li>
+									<img decoding="async" class="" src="./img/svg/logo-augury.svg" alt="augury" loading="lazy" />
+								</li>
+								<li>
+									<img decoding="async" class="" src="./img/svg/logo-appsflyer.svg" alt="appsflyer" loading="lazy" />
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<img decoding="async" class="polygon polygon--4 scaled" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='201'%20height='201'%20viewBox='0%200%20201%20201'%20fill='none'%3e%3cpath%20d='M154.677%2014.3868L199.867%2077.8487L186.95%20154.677L123.489%20199.867L46.6597%20186.949L1.46882%20123.489L14.387%2046.6596L77.8486%201.46848L154.677%2014.3868Z'%20fill='url(%23paint0_linear_172_7082)'%20stroke='%23FF9F00'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_172_7082'%20x1='3.78756'%20y1='-8.0457'%20x2='138.617'%20y2='196.943'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0.08'/%3e%3cstop%20offset='1'%20stop-color='white'%20stop-opacity='0'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" loading="lazy">
+						<img decoding="async" class="polygon scaled polygon--5" src="data:image/svg+xml,%3csvg%20width='98'%20height='98'%20viewBox='0%200%2098%2098'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='49'%20cy='49'%20r='48.5'%20fill='url(%23paint0_linear_172_7081)'%20stroke='%23FF9F00'%20/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_172_7081'%20x1='15.4612'%20y1='-12.1311'%20x2='56.3738'%20y2='98'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0.08'%20/%3e%3cstop%20offset='1'%20stop-color='white'%20stop-opacity='0'%20/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" loading="lazy">
+						<div class="container container--narrower">
+							<h2 class="title">האירוע מתחיל בעוד</h2>
+							
+							<div class="timer" data-endtime="2025-09-01T00:00:00"  data-timezone="+3" data-animation="up">
+								<div class="timer__item">
+									<div class="count days" dir="ltr">
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+										<div class="digit-container third-digit" style="display: none;">
+											<div class="digit">0</div>
+										</div>
+										
+									</div>
+									<div class="text">ימים</div>
+								</div>
+					
+								<div class="timer__item">
+									<div class="count hours" dir="ltr">
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+									</div>
+									<div class="text">שעות</div>
+								</div>
+					
+								<div class="timer__item">
+									<div class="count minutes" dir="ltr">
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+									</div>
+									<div class="text">דקות</div>
+								</div>
+					
+								<div class="timer__item">
+									<div class="count seconds" dir="ltr">
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+										<div class="digit-container">
+											<div class="digit">0</div>
+										</div>
+									</div>
+									<div class="text">שניות</div>
+								</div>
+							</div>
+							
+						</div>
+					</section>					<section class="event-form" id="register-form">
+						<div class="event-form__background">
+							<img decoding="async" class="" src="./img/bg-02.webp" aria-hidden="true" loading="lazy" />
+						</div>
+						<form>
+							<div class="container">
+								<div class="event-form__form">
+									<h2 class="title">הירשמו לאירוע!</h2>
+									<div class="event-form__form-body">
+										<div class="form__row">
+											<div class="form__group">
+												<label class="form__label-text" for="first-name">שם פרטי *</label>
+												<input id="first-name" type="text" class="form__input" placeholder="מיכאל" />
+												<span class="form__error-message">
+													<span class="icon icon--info" aria-hidden="true"></span>
+													<span>הודעה</span>
+												</span>
+											</div>
+											<div class="form__group">
+												<label class="form__label-text" for="last-name">שם משפחה *</label>
+												<input id="last-name" type="text" class="form__input" placeholder="כהן" />
+												<span class="form__error-message">
+													<span class="icon icon--info" aria-hidden="true"></span>
+													<span>הודעה</span>
+												</span>
+											</div>
+										</div>
+										<div class="form__row">
+											<div class="form__group">
+												<label class="form__label-text" for="work-email">מייל עבודה *</label>
+												<input id="work-email" type="email" class="form__input" placeholder="example@abra-it.com" />
+												<span class="form__error-message">
+													<span class="icon icon--info" aria-hidden="true"></span>
+													<span>הודעה</span>
+												</span>
+											</div>
+											<div class="form__group">
+												<label class="form__label-text" for="phone">מספר טלפון *</label>
+												<input id="phone" type="text" class="form__input" placeholder="050-1234567" />
+												<span class="form__error-message">
+													<span class="icon icon--info" aria-hidden="true"></span>
+													<span>הודעה</span>
+												</span>
+											</div>
+										</div>
+										<div class="form__row">
+											<div class="form__group">
+												<label class="form__label-text" for="role">תפקיד *</label>
+												<input id="role" type="email" class="form__input" placeholder="למשל מיכאל" />
+												<span class="form__error-message">
+													<span class="icon icon--info" aria-hidden="true"></span>
+													<span>הודעה</span>
+												</span>
+											</div>
+											<div class="form__group">
+												<label class="form__label-text" for="company">שם החברה *</label>
+												<input id="company" type="text" class="form__input" placeholder="אברא" />
+												<span class="form__error-message">
+													<span class="icon icon--info" aria-hidden="true"></span>
+													<span>הודעה</span>
+												</span>
+											</div>
+										</div>
+					
+										<div class="form__group">
+											<label class="form__label-text" for="textarea">תרגיש חופשי לשתף אותנו בכל מידע נוסף</label>
+											<textarea id="textarea" type="email" class="form__input" placeholder="טקסט"></textarea>
+										</div>
+					
+										<label class="form__checkbox">
+											<input type="checkbox" name="checkbox" class="form__checkbox-input" />
+											<span class="form__checkbox-box">
+												<span class="icon icon--check" aria-hidden="true"></span>
+											</span>
+											<span class="form__checkbox-label">אשמח להישאר מעודכן בהשקות מוצרים חדשות של אברא, בחדשות מהתעשייה ובאירועים מיוחדים (ניתן להסיר את ההרשמה בכל עת)</span>
+										</label>
+					
+										<button class="btn btn--primary" role="button" aria-label="הרשם עכשיו!" type="submit">הרשם עכשיו!</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					
+					<!-- <img decoding="async" class="polygon polygon--2" src="img/svg/polygon.svg" aria-hidden="true" loading="lazy"> -->
+
+					<div class="sticky-button _event-register">
+						<a class="btn btn--primary" href="#register-form">
+							<span>הרשמה לאירוע</span>
+							<!-- <span>Event registration</span> -->
+							<span class="icon icon--android" aria-hidden="true"></span>
+						</a>
+
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__top">
+							<div class="footer__top-right">
+								<h5>השאר תמיד מעודכן! 🚀</h5>
+								<p>הירשם לרשימת התפוצה הבלעדית שלנו וקבל את הסיפורים הטריים ביותר מצוות abra</p>
+							</div>
+			
+							<div class="footer__form">
+								<form action="">
+									<div class="footer__form-body">
+										<div class="footer__form-group">
+											<!-- error must add class 'has-error' to element 'form__group' -->
+											<div class="form__group">
+												<label class="form__label-text" for="footer-email">כתובת מייל *</label>
+												<input id="footer-email" type="email" class="form__input" placeholder="לדוגמה: Chen123@gmail.com" />
+												<span class="form__error-message">
+													<span class="icon icon--info"></span>
+													<span>הודעה</span>
+												</span>
+											</div>
+											<label class="form__checkbox">
+												<input type="checkbox" name="" class="form__checkbox-input" />
+												<span class="form__checkbox-box">
+													<span class="icon icon--check" aria-hidden="true"></span>
+												</span>
+												<span class="form__checkbox-label">אני מאשר לקבל הודעות שיווקיות מאברא</span>
+											</label>
+										</div>
+			
+										<button type="submit" role="button" class="btn btn--primary">הרשמה</button>
+									</div>
+								</form>
+							</div>
+						</div>
+			
+						<nav class="footer__nav" aria-label="תפריט כותרת תחתונה">
+							<ul class="footer__menu" data-spollers="992,max">
+								<li class="footer__menu-item">
+									<button role="button" class="footer__menu-title" aria-expanded="false" data-spoller>
+										<span>אנשים</span>
+										<span>
+											<span class="icon icon--chevron-down" aria-hidden="true"></span>
+										</span>
+									</button>
+									<ul>
+										<li>
+											<a href="#">אודותינו</a>
+										</li>
+										<li>
+											<a href="#">הסיפור שלנו</a>
+										</li>
+										<li>
+											<a href="#">משקיעים ודריקטוריון</a>
+										</li>
+										<li>
+											<a href="#">קריירה</a>
+										</li>
+										<li>
+											<a href="#">צור קשר</a>
+										</li>
+									</ul>
+								</li>
+			
+								<li class="footer__menu-item">
+									<button role="button" class="footer__menu-title" aria-expanded="false" data-spoller>
+										<span>תהליכים</span>
+										<span>
+											<span class="icon icon--chevron-down" aria-hidden="true"></span>
+										</span>
+									</button>
+									<ul>
+										<li>
+											<a href="#">בריאות</a>
+										</li>
+										<li>
+											<a href="#">ביטחון</a>
+										</li>
+										<li>
+											<a href="#">פינטק</a>
+										</li>
+										<li>
+											<a href="#">הייטק</a>
+										</li>
+										<li>
+											<a href="#">ממשלתי</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer__menu-item has-cols-2">
+									<button role="button" class="footer__menu-title" aria-expanded="false" data-spoller>
+										<span>טכנולוגיות</span>
+										<span>
+											<span class="icon icon--chevron-down" aria-hidden="true"></span>
+										</span>
+									</button>
+									<ul>
+										<li>
+											<a href="#">מערכות CRM</a>
+										</li>
+										<li>
+											<a href="#">מערכות ERP</a>
+										</li>
+										<li>
+											<a href="#">R&D Solutions</a>
+										</li>
+										<li>
+											<a href="#">Cloud Solutions</a>
+										</li>
+										<li>
+											<a href="#">Business Intelligence (BI)</a>
+										</li>
+										<li>
+											<a href="#">E-Commerce & Marketing Automation</a>
+										</li>
+										<li>
+											<a href="#">Strategy Realization</a>
+										</li>
+										<li>
+											<a href="#">Cyber Consulting</a>
+										</li>
+										<li>
+											<a href="#">Training</a>
+										</li>
+										<li>
+											<a href="#">בלוג טכנולוגיה</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+			
+						<div class="footer__logo">
+							<span class="icon icon--logo" aria-hidden="true"></span>
+						</div>
+			
+						<div class="footer__bottom">
+							<div class="footer__contacts">
+								<ul class="contacts-list">
+									<li>כתובתנו: הפנינה 8, רעננה</li>
+									<li>
+										<a href="tel:+97250944503">+972-50944503</a>
+									</li>
+									<li>
+										<a href="mailto:support@abra-it.com">support@abra-it.com</a>
+									</li>
+								</ul>
+								<ul class="socials">
+									<li>
+										<a href="#">
+											<span class="icon icon--x" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="icon icon--tt" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="icon icon--in" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="icon icon--fb" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="icon icon--instagram" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__copyrights">
+								<p>© כל הזכויות שמורות לאברא 2025</p>
+								<ul>
+									<li>
+										<a href="#">סטטוס</a>
+									</li>
+									<li>
+										<a href="#">מדיניות פרטיות</a>
+									</li>
+									<li>
+										<a href="#">תנאי שימוש</a>
+									</li>
+									<li>
+										<a href="#">הגדרות עוגיות</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div>
+
+		
+		
+		
+		
+		<script src="./js/modules/spollers.js"></script>
+		
+		<script src="./js/modules/timer.js"></script>
+		
+		
+	</body>
+</html>

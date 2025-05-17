@@ -1,0 +1,85 @@
+<section class="event-form" id="register-form">
+	<div class="event-form__background">
+		<img decoding="async" class="" src="img/bg-02.webp" aria-hidden="true" loading="lazy" />
+	</div>
+	<form>
+		<div class="container">
+			<div class="event-form__form">
+				<h2 class="title">{{title}}</h2>
+				<div class="event-form__form-body">
+					<div class="form__row">
+						<div class="form__group">
+							<label class="form__label-text" for="first-name">First Name *</label>
+							<input id="first-name" type="text" class="form__input" placeholder="Michael" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>Message</span>
+							</span>
+						</div>
+						<div class="form__group">
+							<label class="form__label-text" for="last-name">Last Name *</label>
+							<input id="last-name" type="text" class="form__input" placeholder="Cohen" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>Message</span>
+							</span>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<label class="form__label-text" for="work-email">Work Email *</label>
+							<input id="work-email" type="email" class="form__input" placeholder="example@abra-it.com" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>Message</span>
+							</span>
+						</div>
+						<div class="form__group">
+							<label class="form__label-text" for="phone">Phone Number *</label>
+							<input id="phone" type="text" class="form__input" placeholder="050-1234567" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>Message</span>
+							</span>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<label class="form__label-text" for="role">Role *</label>
+							<input id="role" type="text" class="form__input" placeholder="e.g. Developer" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>Message</span>
+							</span>
+						</div>
+						<div class="form__group">
+							<label class="form__label-text" for="company">Company *</label>
+							<input id="company" type="text" class="form__input" placeholder="Abra" />
+							<span class="form__error-message">
+								<span class="icon icon--info" aria-hidden="true"></span>
+								<span>Message</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="form__group">
+						<label class="form__label-text" for="textarea">Feel free to share any additional information</label>
+						<textarea id="textarea" class="form__input" placeholder="Text"></textarea>
+					</div>
+
+					<label class="form__checkbox">
+						<input type="checkbox" name="checkbox" class="form__checkbox-input" />
+						<span class="form__checkbox-box">
+							<span class="icon icon--check" aria-hidden="true"></span>
+						</span>
+						<span class="form__checkbox-label">
+							I would like to stay updated about Abra’s product launches, industry news, and special events (you can unsubscribe at any time)
+						</span>
+					</label>
+
+					<button class="btn btn--primary" role="button" aria-label="Register Now!" type="submit">Register Now!</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{>components/head index='Event page'}}
+
+	<body>
+		<div class="body-wrapper">
+			{{>components/ltr/header}}
+			<main>
+				{{>pages/ltr/02.event-page/01.hero-section}}
+				<div class="sections-wrapper">
+					{{>pages/ltr/02.event-page/02.event-content}}
+					{{>pages/ltr/02.event-page/03.speakers-team}}
+					{{>pages/rtl/02.event-page/04.partners-logo title="Our partners"}}
+					{{>pages/ltr/02.event-page/05.timer title="Time to event"}}
+					{{>pages/ltr/02.event-page/06.register-form title="Register for the event!"}}
+
+					<div class="sticky-button _event-register">
+						<a class="btn btn--primary" href="#register-form">
+							<!-- <span>הרשמה לאירוע</span> -->
+							<span>Event registration</span>
+							<span class="icon icon--android" aria-hidden="true"></span>
+						</a>
+
+					</div>
+				</div>
+			</main>
+			{{>components/ltr/footer}}
+			
+		</div>
+
+		{{>components/scripts timer='true' spollers='true'}}
+	</body>
+</html>
